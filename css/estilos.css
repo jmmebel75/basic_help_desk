@@ -1,0 +1,118 @@
+/* Estilos para el formulario de login */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-login {
+    width: 60%;
+    max-width: 300px;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff; /* Cuadrado blanco */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-login input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.container-login button {
+    width: 97%;
+    padding: 10px;
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-login button:hover {
+    background-color: #2980b9; /* Azul oscuro */
+}
+
+/* Estilos para el menú de usuario (menu.php) */
+.menu-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db; /* Azul para historial */
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para cada enlace */
+.menu-container a.create-ticket {
+    background-color: #2ecc71; /* Verde para "Crear Ticket" */
+}
+
+.menu-container a.historial {
+    background-color: #3498db; /* Azul para "Historial" */
+}
+
+.menu-container a.logout {
+    background-color: #e74c3c; /* Rojo para "Cerrar sesión" */
+}
+
+/* Efecto hover en los botones */
+.menu-container a:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    background-color: #2980b9; /* Azul más oscuro en hover */
+}
+
+/* Estilos para el formulario de creación de ticket */
+.container-crear-ticket {
+    width: 80%;
+    max-width: 500px; /* Aumento el tamaño máximo para que no se vea tan estrecho */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos en una columna */
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+.container-crear-ticket input,
+.container-crear-ticket textarea,
+.container-crear-ticket select {
+    width: 100%; /* Ancho completo para que ocupen todo el espacio del contenedor */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Aseguramos que el padding no afecte al ancho total */
+}
+
+.container-crear-ticket button {
+    width: 100%; /* Ancho completo para el botón */
+    padding: 10px;
+    background-color: #2ecc71; /* Verde para el botón de crear ticket */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-crear-ticket button:hover {
+    background-color: #27ae60; /* Verde oscuro en hover */
+}
