@@ -69,6 +69,7 @@ if (isset($_POST['crear_usuario'])) {
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            margin-bottom: 10px;
         }
         .form-container button:hover {
             background-color: #2980b9;
@@ -78,6 +79,25 @@ if (isset($_POST['crear_usuario'])) {
             margin-top: 15px;
             color: green;
             font-size: 16px;
+        }
+        .volver-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #95a5a6;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        }
+
+        .volver-btn:hover {
+            background-color: #7f8c8d;
         }
     </style>
 </head>
@@ -97,6 +117,7 @@ if (isset($_POST['crear_usuario'])) {
         <?php if (isset($mensaje)): ?>
             <div class="mensaje"><?= $mensaje; ?></div>
         <?php endif; ?>
+        <a href="panel_admin.php" class="volver-btn">Volver al Panel</a>
     </div>
 </body>
 </html>
