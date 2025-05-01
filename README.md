@@ -23,9 +23,3 @@ Esta aplicación permite a los usuarios reportar incidencias mediante tickets, m
 - Cerrar sesión.
 
 
-## 🚀 Instalación
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/jmmebel/helpdesk.git
-   cd helpdesk
